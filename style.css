@@ -1,0 +1,787 @@
+/* Общие стили */
+@font-face {
+    font-family: 'HSE Sans';
+    src: url('fonts/HSESans-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HSE Sans';
+    src: url('fonts/HSESans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HSE Sans';
+    src: url('fonts/HSESans-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HSE Sans';
+    src: url('fonts/HSESans-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HSE Sans';
+    src: url('/fonts/__MACOSX/._HSESans-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HSE Sans';
+    src: url('fonts/HSESans-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'HSE Sans', sans-serif;
+    font-weight: 400; /* Regular */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+h1{
+    font-family: 'HSE Sans', sans-serif;
+    font-weight: 700; /* Black */
+}
+p{
+    font-family:'woff2';
+}
+/* Hero Section */
+.hero {
+    height: 30vh;
+    background-image: url('./');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: var(--white);
+}
+
+/* Контейнер */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    position: relative;
+}
+h2{
+    text-align: left;
+    margin-left: 0;
+}
+/* Главный экран */
+#hero {
+    background-size: cover;
+    background-position: center;
+    color: rgb(1, 12, 113);
+    text-align: left; /* Выравниваем весь текст влево */
+    padding: 100px 0;
+    position: relative;
+}
+
+#hero h1 {
+    position: relative;
+    top: -170px; /* Поднимаем заголовок без изменений фона */
+}
+ 
+/* Навигация */
+.hero-nav {
+    position: absolute;
+    top: 10px; /* Поднимаем выше */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.hero-nav {
+    position: absolute;
+    top: -270px; /* Поднимаем еще выше */
+    left: 23%; /* Прижимаем к левому краю */
+    width: auto; /* Даем навигации естественную ширину */
+}
+
+.hero-nav ul {
+    display: flex;
+    gap: 40px; /* Оставляем красивый зазор между пунктами */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-nav ul li a {
+    color: rgb(1, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.hero-nav ul li a:hover {
+    color: #2f2637;
+}
+
+.hero-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Увеличиваем расстояние между пунктами */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px; /* Увеличиваем размер шрифта */
+    transition: color 0.3s ease;
+}
+
+.hero-nav ul li a:hover {
+    color: #32263d;
+}
+
+/* Заголовок */
+#hero h1 {
+    font-size: 5rem; /* Увеличиваем размер заголовка */
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    margin-top: 200px; /* Опускаем немного вниз */
+}
+
+/* Кнопка */
+#hero .btn {
+    display: inline-block;
+    width: 180px; /* Фиксированная ширина */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 25px 20px;
+    background: linear-gradient(90deg, #003976, #023b79);
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#hero .btn:hover {
+    transform: scale(1.1);
+    
+    
+}
+ /* Общие стили */
+body {
+    font-family: 'HSE Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== Секция To-Do (Изолированные стили) ==== */
+#todo {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 50px 0;
+    text-align: left;
+}
+
+#todo h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Контейнер для To-Do */
+#todo .todo-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Шаги */
+#todo .stepper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Каждый шаг */
+#todo .step {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Кружок с номером */
+#todo .step-number {
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+/* Стрелка вниз */
+#todo .step-number::after {
+    content: "↓";
+    font-size: 1.8rem;
+    color: black;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Убираем стрелку у последнего шага */
+#todo .step:last-child .step-number::after {
+    display: none;
+}
+
+/* Текст шага */
+#todo .step-text {
+    margin-left: 15px;
+    text-align: left;
+    max-width: 600px;
+}
+
+/* ==== Организаторы (Изолированные стили) ==== */
+#organizers {
+    padding: 50px 0;
+    text-align: center;
+}
+.container .move-left h2{
+    text-align: left;
+}
+
+#schedule{
+    background-size: cover;
+    background-position: center;
+}
+#schedule .container h2{
+    text-align: left;
+}
+
+
+#organizers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Контейнер для организаторов */
+#organizers .organizers-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Грид организаторов */
+#organizers .organizers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Карточка организатора */
+#organizers .organizer {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    display: block;
+    margin: 0;
+    
+}
+
+/* Фото организатора */
+#organizers .organizer img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    display: block;
+    margin: 0;
+}
+
+/* Описание организатора */
+#organizers .organizer p {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Ссылки организатора */
+#organizers .organizer a {
+    color: white;
+    text-decoration: underline;
+}
+
+.move-left {
+    text-align: left;
+    margin-left: 0;
+}
+/* Наши организаторы */
+#organizers .organizers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Организатор */
+#organizers .organizer {
+    text-align: center;
+    font-family: 'HSE Sans', sans-serif;
+}
+
+/* Изображение без отступов */
+#organizers .organizer img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0;
+}
+
+/* Описание с ссылкой */
+#organizers .organizer p {
+    background: #1b0386;
+    color: rgb(224, 216, 216);
+    padding: 25px;
+    border-radius: 5px;
+    margin: 0; /* Убрали отступ сверху */
+    text-align: center;
+}
+
+/* Делаем текст ссылкой */
+#organizers .organizer p a {
+    color: white;
+    text-decoration: none; /* Без подчеркивания */
+    font-weight: bold;
+}
+
+/* Расписание тренировок */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Секция расписания */
+#schedule {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#schedule h2 {
+    font-size:2cqmax;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Контейнер для сетки (изображение + расписание) */
+.schedule-grid {
+    display: flex;
+    gap: 20px; /* Расстояние между изображением и расписанием */
+}
+
+/* Левая половина: Изображение */
+.image-container {
+    flex: 1; /* Занимает половину пространства */
+}
+.text-v {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    display: block;
+    margin: 0;
+}
+.image-container img {
+    width: 100%; /* Изображение занимает всю ширину контейнера */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Правая половина: Расписание */
+.schedule-content {
+    background-color: #a4be60;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    flex: 1; /* Занимает половину пространства */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Расстояние между элементами */
+    padding: 10px;
+}
+.schedule-content p{
+    font-size: 2rem;
+}
+/* Уведомления */
+.update-notice, .follow-notice {
+    text-align: center;
+    color: #555;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.update-notice {
+    font-weight: bold;
+}
+
+/* Список расписания */
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Расстояние между элементами расписания */
+    margin: center;
+}
+
+/* Элементы расписания */
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.schedule-item .faculty {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+.schedule-item .date-time {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Стать волонтером */
+
+.volunteer-container {
+    display: flex;
+    align-items: center; /* Выравнивание элементов по центру */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+ 
+.text-container {
+    text-align: left;
+    font-size: 18px; /* Увеличил размер текста */
+    line-height: 2; /* Улучшил читаемость */
+}
+
+.volunteer-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Выравниваем элементы в строке */
+    max-width: 800px; /* Оптимальная ширина */
+    margin: 0 auto; /* Центрируем */
+    gap: 40px; /* Отступ между текстом и кнопкой */
+    flex-wrap: wrap; /* Если не влезает, переносим элементы */
+}
+
+.volunteer-text {
+    flex: 10; /* Больше места для текста */
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin-left: 0; /* Убираем отступы */
+    flex: 1; /* Позволяет контейнеру с текстом занимать все доступное пространство */
+    font-size: 25px;
+    line-height: 1.6;
+    max-width: 800px; /* Подстрой под свой дизайн */
+    word-wrap: break-word; /* Предотвращает разрывы слов */
+}
+
+.volunteer-top .btn {
+    margin-left: 50px; /* Space between text and button */
+}
+.button-container {
+    display: flex;
+    align-items: center; /* Центрирование кнопки по высоте */
+}
+
+.register-button {
+    padding: 20px 25px;
+    background-color: #003264;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px; /* Сделал текст на кнопке больше */
+    cursor: pointer;
+}
+
+.image-v {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-v img {
+    max-width: 70%;
+    height: auto;
+}
+
+/* Стили для кнопки */
+#volunteer .btn {
+    display: inline-block;
+    padding: 20px 35px;
+    background: linear-gradient(90deg, #0b509b, #074586);
+    color: white;
+    border-radius: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#volunteer .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Галерея */
+.gallery-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin: left;
+}
+
+.gallery-btn {
+    padding: 20px 25px;
+    background: #005bb1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.gallery-btn.active {
+    background: #005ec2;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-img {
+    display: none;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-img.active {
+    display: block;
+}
+
+/* Мы в новостях и соцсетях */
+.news-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.news-grid img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.organizers-grid p a {
+    font-size: 16px; /* Размер ссылок */
+    color: #0073e6; /* Цвет ссылок */
+}
+
+#organizers h2 {
+    font-size: 24px; /* Любой размер */
+}
+
+/* Отзывы участников */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.review img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.review p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+/* Карта */
+#map {
+    height: 400px;
+    margin-top: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+/* Контакты */
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Позволяет полям располагаться друг под другом на узких экранах */
+}
+
+.form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Стилизация текстового поля */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    min-height: 100px; /* Минимальная высота */
+    resize: vertical; /* Позволяет менять высоту */
+}
+
+/* Кнопка отправки */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Адаптивность: на маленьких экранах input будут в колонку */
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+    }
+}
+
+/* Футер */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Testimonial Card */
+.testimonial-card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+/* Profile Image */
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Name */
+.testimonial-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+/* Title */
+.testimonial-card .title {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
